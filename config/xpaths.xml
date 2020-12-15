@@ -1,0 +1,17 @@
+<elements>
+    <element name="AcceptCookies" value='//*[@id="CybotCookiebotDialogBodyButtonAccept"]'/>
+    <element name="SeeSolutions" value='//*[@id="Solutions"]/div/div/div[1]/div/div[2]/div/a'/>
+    <element name="MultiplatformSelected" value='//*[@id="products--menu"]/div/div/div[1]/div[5]/a'/>
+    <element name="PricePLP" value='//*[@id="MultiplatformSecurity"]/div[2]/div[2]/div[2]/span[3]'/>
+    <element name="ProductNamePLP" value='//*[@id="PCSecurity"]/div[2]/div[2]/h3'/>
+    <element name="BuyNowMP" value='//*[@id="MultiplatformSecurity"]/div[2]/div[2]/a[1]'/>
+    <element name="ProductNameCart" value='//*[@id="section1"]/div/div/div[1]/div[2]/span[1]'/>
+    <element name="PriceCart" value='//*[@id="section1"]/div/div/div[2]/div[2]/span'/>
+    <element name="CartTotal" value='//*[@id="section8"]/div/div[2]/div[2]/span'/>
+    <element name="CurrencyCart" value='//*[@id="storeApp"]/div[1]/div[2]/section[1]/div/div[3]/span[2]/select'/>
+    <element name="UpdateButton" value='//*[@id="section1"]/div/div/div[2]/div[1]/span[1]/span'/>
+    <element name="MultiplatformButton" value='mp-scroll'/>
+    <element name="QtyBox" value='qty_21642367'/>
+    <element name="RemoveFromCart" value='pid_21642367'/>
+
+</elements>
