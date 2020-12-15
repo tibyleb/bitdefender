@@ -19,7 +19,7 @@ to install, create and activate a virtual environment:
 python3.7 -m pip install virtualenv
 ```
 ```
-virtualenv venv
+python3 -m virtualenv venv
 ```
 ```
 source venv/bin/activate
