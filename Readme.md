@@ -26,7 +26,7 @@ source venv/bin/activate
 ```
 Run following command to install required libraries:
 ```
-pip install selenium lxml price-parser
+pip install selenium lxml price-parser html_testrunner
 ```
 ---
 ## Built with

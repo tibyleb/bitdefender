@@ -1,5 +1,5 @@
-<test-suite name='quiz_bitdefender'>
-    <test-module name='Cart'>
+<test-suite name='quiz_bitdefender' >
+    <test-module name='Cart' >
         <test-case name='Check price in cart for default quantity' function='test_priceInCart' />
         <test-case name='Check price in cart for modified quantity' function='test_priceInUpdatedCart' />
     </test-module>

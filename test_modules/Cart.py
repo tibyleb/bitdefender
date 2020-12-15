@@ -1,7 +1,7 @@
 import platform
 import unittest
 
-import utilities.logger as ulogger
+import utilities.logger as logger
 import utilities.parser as parser
 
 from time import sleep
@@ -12,11 +12,8 @@ from selenium.webdriver.common.keys import Keys
 
 
 class Cart(unittest.TestCase):
-    # log = logger.Logger()
+    log = logger.Logger()
 
-    logger = ulogger.Logger()
-    logger.set_up()
-    log = logger.get_logger()
 
     #############################
     ### CLASS SETUP FUNCTIONS ###
@@ -26,13 +23,13 @@ class Cart(unittest.TestCase):
     def setUp(self):
         options = Options()
         if platform.system() == 'Darwin':
-            chromedriver_path = '../tools/chromedriver_mac'
+            chromedriver_path = 'tools/chromedriver_mac'
             options.add_argument('--start-maximized')
         elif platform.system() == 'Linux':
-            chromedriver_path = '../tools/chromedriver_linux'
+            chromedriver_path = 'tools/chromedriver_linux'
             options.add_argument('--start-maximized')
         elif platform.system() == 'Windows':
-            chromedriver_path = '../tools/chromedriver_win.exe'
+            chromedriver_path = 'tools\\chromedriver_win.exe'
             options.add_argument('--start-maximized')
         else:
             self.log.error('Unrecognized platform! ')
@@ -190,5 +187,3 @@ class Cart(unittest.TestCase):
         self.remove_product_from_cart()
         self.assertIn('solutions', self.driver.current_url)
         self.log.info('SUCCESS')
-
-# unittest.main()
